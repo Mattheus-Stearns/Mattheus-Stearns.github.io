@@ -101,17 +101,17 @@ ul {
 }
 
 .button {
-	  border: none;
-	  color: white;
-	  padding: 16px 32px;
-	  text-align: center;
-	  text-decoration: none;
-	  display: inline-block;
-	  font-size: 16px;
-	  margin: 4px 2px;
-	  transition-duration: 0.75s;
-	  cursor: pointer;
-	}
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.75s;
+  cursor: pointer;
+}
 
 .button1 {
   background-color: white;
@@ -122,4 +122,37 @@ ul {
 .button1:hover {
   background-color: #4CAF50;
   color: white;
+}
+
+.collapsible {
+  background-color: #727272;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: 1px solid black;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  font-size: 125%;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.collapsible.active:after {
+  content: '\2212';
+}
+
+.content {
+  border: 1px solid black;
+  background-color: lightblue;
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
 }
