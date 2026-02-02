@@ -1,0 +1,20 @@
+name: Generate Jinja Site
+
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+      - name: Install Jinja
+        run: pip install jinja2
+      - name: Run my build script
+        run: python app.py
