@@ -20,18 +20,33 @@
 		<nav>
 			<div id="navbar">
 				<ul id="myHeader"> <!-- This is the code for the navigation bar -->
-			 		<li id="NavBar"><a id="BoxHeader" class="{{ 'active' if page_id == 'index.html' }}" href="index.html">Home</a></li>
-					<li id="NavBar"><a id="BoxHeader" class="{{ 'active' if page_id == 'hobbies.html' }}" href="hobbies.html">Hobbies</a></li>
-            		<li id="NavBar"><a id="BoxHeader" class="{{ 'active' if page_id == 'cv.html' }}" href="cv.html">My CV</a></li>
-            		<li id="NavBar"><a id="BoxHeader" class="{{ 'active' if page_id == 'projects.html' }}" href="projects.html">Project Ideas</a></li>
-            		<li id="NavBar"><a id="BoxHeader" class="{{ 'active' if page_id == 'completedProjects.html' }}" href="completedProjects.html">Completed Projects</a></li>
-            		<li id="NavBar"><a id="BoxHeader" class="{{ 'active' if page_id == 'blog.html' }}" href="blog.html">My Blog</a></li>
+			 		<li id="NavBar"><a id="BoxHeader" class="" href="index.html">Home</a></li>
+					<li id="NavBar"><a id="BoxHeader" class="" href="hobbies.html">Hobbies</a></li>
+            		<li id="NavBar"><a id="BoxHeader" class="" href="cv.html">My CV</a></li>
+            		<li id="NavBar"><a id="BoxHeader" class="" href="projects.html">Project Ideas</a></li>
+            		<li id="NavBar"><a id="BoxHeader" class="active" href="completedProjects.html">Completed Projects</a></li>
+            		<li id="NavBar"><a id="BoxHeader" class="" href="blog.html">My Blog</a></li>
 				</ul>
 			</div>
 		</nav>
 	</header>
 
-    {% block content %}{% endblock %}
+    
+
+  <div id="header"> <!-- These div's are the boxes so the website looks ok-->
+    <h1 id="h1">
+      My Completed Projects
+    </h1>
+
+	<p>
+		Currently no projects of substance have been completed :(
+		Check out <a href="https://github.com/Mattheus-Stearns">My Github Profile</a> to see what projects I have worked on, or am working on. (Some are not yet in a state that I can publisize, so beware of that as well.)
+	</p>
+
+
+  </div>
+
+
 
     <footer>© Mattheus Stearns</footer>
 
