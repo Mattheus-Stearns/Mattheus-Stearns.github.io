@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>Mattheus Stearns</title> <!--This is what it should say on top of the tab-->
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" /> <!-- This makes the website scale on the users device-->
+	<meta name="description" content="Mattheus Stearns" /> <!-- This is how you would find the website if you searched for it-->
+  	<meta name="keywords" content="Mattheus Stearns" /> <!-- ^^^^ -->
+  	<link rel="stylesheet" type="text/css" href="static/css/stylesheet.css"> <!-- This is linking itself with its CSS stylesheet-->
+	<link rel="canonical" href="https://mattheusstearns.com/index.html"/>
+	<script src="https://apis.google.com/js/api.js"></script>
+    <script src="static/js/scripts.js"></script>
+</head>
+
+<body>
+
+  	<header>
+		<nav>
+			<div id="navbar">
+				<ul id="myHeader"> <!-- This is the code for the navigation bar -->
+			 		<li id="NavBar"><a id="BoxHeader" class="{{ 'active' if page_id == 'index.html' }}" href="index.html">Home</a></li>
+					<li id="NavBar"><a id="BoxHeader" class="{{ 'active' if page_id == 'hobbies.html' }}" href="hobbies.html">Hobbies</a></li>
+            		<li id="NavBar"><a id="BoxHeader" class="{{ 'active' if page_id == 'cv.html' }}" href="cv.html">My CV</a></li>
+            		<li id="NavBar"><a id="BoxHeader" class="{{ 'active' if page_id == 'projects.html' }}" href="projects.html">Project Ideas</a></li>
+            		<li id="NavBar"><a id="BoxHeader" class="{{ 'active' if page_id == 'completedProjects.html' }}" href="completedProjects.html">Completed Projects</a></li>
+            		<li id="NavBar"><a id="BoxHeader" class="{{ 'active' if page_id == 'blog.html' }}" href="blog.html">My Blog</a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+
+    {% block content %}{% endblock %}
+
+    <footer>© Mattheus Stearns</footer>
+
+</body>
+
+</html>
