@@ -1,3 +1,10 @@
+<<<<<<< HEAD
 # .gitignore
 .github/
 .venv/
+=======
+# Ignore Python cache directories
+__pycache__/
+*.py[cod]
+*$py.class
+>>>>>>> refs/remotes/origin/main
