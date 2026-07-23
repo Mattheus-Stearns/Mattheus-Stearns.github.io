@@ -39,7 +39,7 @@ jobs:
         with:
           # Upload the build output directory
           # Ensure your build process outputs to 'dist' or change this path to '.' for root files
-          path: '.'
+          path: './dist'
 
       - name: Deploy to GitHub Pages
         id: deployment
